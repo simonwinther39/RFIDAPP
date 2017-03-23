@@ -1,0 +1,37 @@
+//  Prefix.pch
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+// Library
+#import "Config.h"
+#import "ActivityIndicator.h"
+#import "JSON.h"
+#import "DoAlertView.h"
+
+
+// Controllers & Models
+#import "AppController.h"
+#import "CommonUtils.h"
+#define appController [AppController sharedInstance]
+#define commonUtils [CommonUtils shared]
+
+// Base Views
+#import "UserBaseViewController.h"
+
+// Pages
+#import "LoginVC.h"
+#import "SetPasswordVC.h"
+#import "HomeVC.h"
+#import "BlindCountVC.h"
+#import "SelectHospitalVC.h"
+#import "AuditTypeVC.h"
+#import "ChosenAuditVC.h"
+#import "LooseItemsAuditVC.h"
+#import "FieldCommissionVC.h"
+#import "ManualAuditVC.h"
+#endif
